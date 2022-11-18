@@ -50,4 +50,5 @@ public class Headphones extends Product{
 				+ "\nareWireless:"+this.getAreWireless()
 				+ "\nareCabled:"+this.getAreCabled();
 	}
+	
 }

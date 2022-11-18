@@ -40,4 +40,5 @@ public class Product {
 	public String getPricePlusTax() {
 		return String.format("%.2f", price+price*tax);
 	}
+	
 }

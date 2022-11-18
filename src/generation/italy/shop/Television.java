@@ -49,4 +49,5 @@ public class Television extends Product {
 				+ "\ngetWidth:"+this.getWidth()
 				+ "\nisSmart:"+this.isSmart();
 	}
+	
 }

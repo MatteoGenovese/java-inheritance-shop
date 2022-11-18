@@ -27,4 +27,5 @@ public class Smartphone extends Product {
 				+ "\nprice:"+this.getPrice()
 				+ "\ngetIMEICode:"+this.getIMEICode();
 	}
+	
 }

@@ -15,14 +15,14 @@ public class Main {
 
 		while(true) {
 			Scanner sc = new Scanner(System.in);
-			System.out.println("cosa desideri fare:\n1-Inserimento di un nuovo prodotto\n2-Visualizzazione del catalogo");
+			System.out.println("What you would to do:\n1-Insert a new product\n2-Have a look to the collection");
 			optionStr = sc.nextLine();
 			option = Integer.parseInt(optionStr);
 			
 			if(option==1)
 			{
 				for(int i=0;i<products.length;i++) {
-					System.out.println("che prodotto vuoi inserire:\n1-Smartphone\n2-Television\n3-Headphones");
+					System.out.println("What type of product do you want to insert?\n1-Smartphone\n2-Television\n3-Headphones");
 					String productTypeStr = sc.nextLine();
 					int productType = Integer.parseInt(productTypeStr);
 					
@@ -96,7 +96,7 @@ public class Main {
 					}
 					if(productType!=1 && productType!=2 && productType!=3)
 					{
-						System.out.println("Scelta non corretta, ritorno al menu principale.....");
+						System.out.println("Wrong choice...");
 						System.out.println("");
 					}
 				}

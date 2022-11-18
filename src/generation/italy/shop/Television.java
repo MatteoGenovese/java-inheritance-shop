@@ -6,16 +6,13 @@ public class Television extends Product {
 	private int width;
 	private String isSmart;
 	
-	
 	public Television(int code, String name, String brand, float price, int height, int width, String isSmart) {
 		super(code, name, brand, price);
 		
 		this.height=height;
 		this.isSmart=isSmart;
 		this.width=width;
-
 	}
-	
 
 	public int getHeight() {
 		return height;
@@ -52,10 +49,4 @@ public class Television extends Product {
 				+ "\ngetWidth:"+this.getWidth()
 				+ "\nisSmart:"+this.isSmart();
 	}
-	
-	
-	
-	
-	
-
 }

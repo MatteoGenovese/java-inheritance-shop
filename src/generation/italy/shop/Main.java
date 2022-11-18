@@ -8,17 +8,11 @@ public class Main {
 	public static void main(String[] args) {
 		// TODO Auto-generated method stub
 		
-
-
 		Random rnd = new Random();
 		Product[] products= new Product[3];
-		
 		String optionStr;
 		int option=0;
 
-
-		
-		
 		while(true) {
 			Scanner sc = new Scanner(System.in);
 			System.out.println("cosa desideri fare:\n1-Inserimento di un nuovo prodotto\n2-Visualizzazione del catalogo");
@@ -28,14 +22,10 @@ public class Main {
 			if(option==1)
 			{
 				for(int i=0;i<products.length;i++) {
-					
-					
-				
 					System.out.println("che prodotto vuoi inserire:\n1-Smartphone\n2-Television\n3-Headphones");
 					String productTypeStr = sc.nextLine();
 					int productType = Integer.parseInt(productTypeStr);
 					
-				
 					if(productType==1) {
 						
 						System.out.print("name of the product:");
@@ -53,7 +43,6 @@ public class Main {
 						
 						products[i]= new Smartphone(rnd.nextInt(10000-1000)+1000, name, brand, price, IMEICode);
 						System.out.println(products[i]);
-						
 					}
 					if(productType==2) {
 						
@@ -80,7 +69,6 @@ public class Main {
 						
 						products[i]= new Television(rnd.nextInt(10000-1000)+1000, name, brand, price, height, width, isSmart);
 						System.out.println(products[i]);
-						
 					}
 					if(productType==3) {
 						
@@ -105,53 +93,21 @@ public class Main {
 				
 						products[i]= new Headphones(rnd.nextInt(10000-1000)+1000, name, brand, price, color, areWireless, areCabled);
 						System.out.println(products[i]);
-						
 					}
 					if(productType!=1 && productType!=2 && productType!=3)
 					{
 						System.out.println("Scelta non corretta, ritorno al menu principale.....");
 						System.out.println("");
-						
 					}
-					
-					
-					
-					
 				}
-				
-				
-				
-				
 			}
 			
 			if(option==2)
 			{
-				
 				for(int i=0;i<products.length;i++) {
 					System.out.println(products[i]);
-					
 				}
-				
 			}
-			
-//			sc.close();
-			
-			
-			
-			
 		}
-		
-		
-
-
-		
-//		System.out.print("description: ");
-//		String description = sc.nextLine();
-//		
-//		System.out.print("price: ");
-//		float price = sc.nextFloat();
-		
-
 	}
-
 }

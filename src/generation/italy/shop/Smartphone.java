@@ -8,22 +8,15 @@ public class Smartphone extends Product {
 		super(code, name, brand, price);
 		
 		this.IMEICode=IMEICode;
-
 	}
-	
-	
 	
 	public String getIMEICode() {
 		return IMEICode;
 	}
 
-
-
 	public void setIMEICode(String iMEICode) {
 		IMEICode = iMEICode;
 	}
-
-
 
 	@Override
 	public String toString() {
@@ -34,8 +27,4 @@ public class Smartphone extends Product {
 				+ "\nprice:"+this.getPrice()
 				+ "\ngetIMEICode:"+this.getIMEICode();
 	}
-
-
-	
-
 }

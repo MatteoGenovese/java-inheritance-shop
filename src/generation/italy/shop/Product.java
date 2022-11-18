@@ -8,16 +8,11 @@ public class Product {
 	private float price;
 	private float tax=0.2f;
 	
-	
-	
-	
 	public Product(int code, String name, String brand, float price) {
-
 		this.code = code;
 		this.name = name;
 		this.brand = brand;
 		this.price = price;
-
 	}
 
 	public int getCode() {
@@ -45,8 +40,4 @@ public class Product {
 	public String getPricePlusTax() {
 		return String.format("%.2f", price+price*tax);
 	}
-
-	
-	
-
 }

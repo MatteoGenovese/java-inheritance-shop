@@ -6,9 +6,6 @@ public class Headphones extends Product{
 	private String areWireless;
 	private String areCabled;
 	
-	
-	
-	
 	public Headphones(int code, String name, String brand, float price, String Color, String areWireless, String areCabled) {
 		
 		super(code, name, brand, price);
@@ -16,11 +13,7 @@ public class Headphones extends Product{
 		this.areCabled=areCabled;
 		this.areWireless=areWireless;
 		this.Color=Color;
-		
 	}
-	
-	
-	
 	
 	public String getColor() {
 		return Color;
@@ -57,9 +50,4 @@ public class Headphones extends Product{
 				+ "\nareWireless:"+this.getAreWireless()
 				+ "\nareCabled:"+this.getAreCabled();
 	}
-	
-	
-	
-	
-
 }
